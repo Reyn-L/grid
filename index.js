@@ -13,6 +13,18 @@ let column = [
 ['m', 'n', 'o', 'p']
 ];
 
-console.log(row[1][2], column[1][2]);
+//console.log(row[1][2], column[1][2]);
+
+  for(let i =0; i < row.length; i++){
+    for(let j = 0; j < row[i].length; j++){
+      console.log(row[i][j]);
+    }
+  for (let x = 0; x < column.length; x++){
+    for(let y = 0; y < column[x].length; y++){
+      console.log(column[x][y]);
+    }
+  }
+  }
+
 
 
