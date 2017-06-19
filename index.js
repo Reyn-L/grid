@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-let row = [
+/*let row = [
 [1, 2, 3, 4],
 [5, 6, 7, 8],
 [9, 10, 11, 12],
@@ -24,7 +24,20 @@ let column = [
       console.log(column[x][y]);
     }
   }
+  }*/
+//possible answer 3
+function matrix(newRow, newCol, fill){
+    let grid = [];
+    for(let i = 0; i < newRow; i++){
+      let secondCol = [];
+      for(let j = 0; j < newCol; j++){
+        secondCol[j] = fill;
+      }
+      grid[i] = secondCol;
+      }
+      return grid;
   }
-
+  let my2DMatrix = matrix(8,8, 10);
+  console.log(my2DMatrix[3][3]);
 
 
